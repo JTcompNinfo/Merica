@@ -28,6 +28,39 @@ Dark Blue - #01334e
     border: 0;
 }
 
+
+
+/*make nav stay in place*/
+.nav, .main-nav {
+    position: sticky;
+    top: 0px;
+    padding: 10px 0px;
+    width: 100%;
+}
+
+.nav li{
+    list-style: none;
+}
+
+.logo,
+.main-nav a {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    color: #fce4a8;
+    text-decoration: none;
+}
+
+.nav {
+    margin-top: 5px;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border: 1px solid #71969f;
+    background-color:  #01334e;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 1px;
+}
 /*========================================
     CSS GRID RULES
 =========================================*/
@@ -35,6 +68,83 @@ Dark Blue - #01334e
 .container {
     display: grid;
 }
+
+#header {
+    background-image: url(../images/6261650491_0b33b73b18_k.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y:bottom;
+    min-height: 500px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h2 {
+    color:#fce4a8;
+    font-family: "Bona Nova SC", serif;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    background-color: #71969f9e ;
+    padding: 2%;
+    border-radius: 2em;
+    box-shadow: 0PX 0PX 14PX 0PX rgba(255,255,255,0.75);
+}
+
+ .one h2, .two h2, .three h2, .four h2, .five h2, .six h2, .seven h2 {
+    font-family: "Anton", sans-serif;
+ }
+
+.one {
+    min-height: 250px;
+    background-image: url(../images/american-flag-usa-united-states-preview.jpg);
+    background-repeat: none;
+    background-size: cover;
+}
+
+.two {
+    min-height: 250px;
+    
+}
+
+.three {
+    min-height: 450px;
+    background-repeat: none;
+    background-size: cover;
+    background-position-x: left;
+    background-position-y: bottom;
+}
+
+.four {
+    min-height: 250px;
+    
+}
+
+.five {
+    min-height: 250px;
+    
+}
+
+.six {
+    min-height: 450px;
+    
+    background-repeat: none;
+    background-size: cover;
+    background-position-x:left ;
+    background-position-y: bottom;
+    
+}
+
+.seven {
+    min-height: 250px;
+    
+}
+
+
 /*-------- Responsive Images -------*/
 img {
     width: 100%
@@ -73,7 +183,7 @@ img {
     }
 
     .one {
-        grid-column: 1/4;
+        grid-column: 1/3;
     }
 
     .two {
@@ -83,22 +193,23 @@ img {
 
     .three {
         grid-column: 2/3;
+        grid-row: 2/4;
     }
 
     .four {
-        grid-column: 3/4;
+        grid-column: 1/3;
     }
 
     .five {
-        grid-column: 2/3; 
+        grid-column: 1/3; 
     }
 
     .six {
-        grid-column: 3/4;
+        grid-column: 1/2;
     }
 
     .seven {
-        grid-column: 1/4;
+        grid-column: 2/3;
     }
 
 }
@@ -107,7 +218,7 @@ img {
 /*-------- Desktop Media Query --------*/
 @media screen and (min-width: 1025px) {
     
-    .header {
+    .nav {
         flex-direction: row;
         justify-content: space-between;
     }
@@ -159,7 +270,7 @@ img {
 /*-------- Large Display Media Query --------*/
 @media screen and (min-width: 1850px) {
     
-    .header {
+    .nav {
         flex-direction: row;
         justify-content: space-between;
     }
@@ -170,7 +281,7 @@ img {
 footer {
     margin-top: 0;
     padding: 10%;
-    background-color: #FF9505;
+    background-color: #01334e;
     color: #0e0d0a;
     min-height: 300px;
     font-family: "Playwrite GB S", cursive;
