@@ -50,6 +50,7 @@ Dark Blue - #01334e
     display: block;
     color: #fce4a8;
     text-decoration: none;
+    font-family: "Bona Nova SC", serif;
 }
 
 .nav {
@@ -64,6 +65,17 @@ Dark Blue - #01334e
 /*========================================
     CSS GRID RULES
 =========================================*/
+
+.fltRight {
+    float: right;
+    margin: 0 0 15px 20px;
+        /*  T R   B    L*/
+}
+
+.fltLeft {
+    float: left;
+    margin: 0 15px 20px 0;
+}
 
 .container {
     display: grid;
@@ -97,26 +109,65 @@ Dark Blue - #01334e
 
  .one h2, .two h2, .three h2, .four h2, .five h2, .six h2, .seven h2 {
     font-family: "Anton", sans-serif;
+    text-align: center;
+    padding: 1%;
+    font-size:60px ;
+    
+ }
+
+ .semi {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    box-shadow: 0PX 0PX 14PX 0PX rgba(255,255,255,0.75);
+ }
+
+ .round {
+    border-radius: 2em;
+ }
+
+ .semi-red {
+    background-color: #d71a204c ;
+ }
+
+ .semi-cream {
+    background-color: #fce4a882;
+ }
+
+ .semi-grayblue {
+    background-color:#71969f7a ;
+ }
+
+ .semi-blue{
+    background-color: #01334e66;
  }
 
 .one {
-    min-height: 250px;
+    min-height: 500px;
     background-image: url(../images/american-flag-usa-united-states-preview.jpg);
     background-repeat: none;
     background-size: cover;
+    font-size: 25px;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 .two {
     min-height: 250px;
-    
+    background-color:#71969f ;
+    color: #fce4a8; 
+    font-size:25px;
+    padding: 10%;
 }
 
+
 .three {
+    background-image: url(../images/9863017573_24fa61962a_c.jpg);
     min-height: 450px;
     background-repeat: none;
     background-size: cover;
-    background-position-x: left;
-    background-position-y: bottom;
+    background-position-x: right;
+    background-position-y: top;
 }
 
 .four {
@@ -282,7 +333,7 @@ footer {
     margin-top: 0;
     padding: 10%;
     background-color: #01334e;
-    color: #0e0d0a;
+    color: #fce4a8;
     min-height: 300px;
     font-family: "Playwrite GB S", cursive;
 }
