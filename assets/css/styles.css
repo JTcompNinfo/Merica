@@ -150,6 +150,7 @@ Dark Blue - #01334e
     font-size: 25px;
     text-align: center;
     font-family: "Bebas Neue", sans-serif;
+    color: #fce4a8;
 }
 
 .two {
@@ -172,17 +173,26 @@ Dark Blue - #01334e
 
 .four {
     min-height: 250px;
+    padding: 10%;
+    justify-content: center;
+    font-size: 30px;
+    background-color: #01334e;
+    color: #d71a21;
     
 }
 
 .five {
     min-height: 250px;
-    
+    padding: 10%;
+    justify-content: center;
+    color: #fce4a8;
+    background-color: #d71a21;
+    font-size: 30px;
 }
 
 .six {
     min-height: 450px;
-    
+    background-image: url(../images/pexels-edmond-dantes-7103103.jpg);
     background-repeat: none;
     background-size: cover;
     background-position-x:left ;
@@ -192,13 +202,18 @@ Dark Blue - #01334e
 
 .seven {
     min-height: 250px;
+    padding: 10%;
+    background-color: #71969f;
+    font-size: 30px;
+    color: #fce4a8;
     
 }
 
 
 /*-------- Responsive Images -------*/
 img {
-    width: 100%
+    width: 100%;
+    padding: 2%;
 }
 
 
